@@ -8,7 +8,7 @@ import thunkMiddleware from "redux-thunk";
 
 const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
 
-const Application = () => {
+const MyReduxApp = () => {
   return (
     <Provider store={store}>
       <AppNavigator />
@@ -16,4 +16,4 @@ const Application = () => {
   );
 };
 
-export default Application;
+export default MyReduxApp;
